@@ -1,21 +1,95 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Your Website Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>One Page Website</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(to bottom, #4e54c8, #8f94fb);
+        color: #fff;
+    }
+
+    .container {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        padding: 50px 0;
+    }
+
+    h1 {
+        font-size: 3em;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 1.2em;
+        line-height: 1.6;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        margin-top: 20px;
+        background-color: #fff;
+        color: #4e54c8;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 1.2em;
+        transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+        background-color: #8f94fb;
+        color: #fff;
+    }
+
+    /* Additional sections */
+    section {
+        padding: 100px 0;
+    }
+
+    .section-title {
+        font-size: 2em;
+        margin-bottom: 30px;
+    }
+
+    .section-content {
+        font-size: 1.2em;
+        line-height: 1.6;
+    }
+</style>
 </head>
 <body>
 
-<header>
-    <h1>Welcome to Your Website</h1>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
+<div class="container">
+    <h1>Welcome to One Page Website</h1>
+    <p>This is a simple one-page website example with a gradient background.</p>
+    <a href="#about" class="btn">About</a>
+    <a href="#contact" class="btn">Contact</a>
+</div>
+
+<section id="about">
+    <div class="container">
+        <h2 class="section-title">About Us</h2>
+        <p class="section-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla sit amet dolor et mollis. Nullam vehicula risus ut metus auctor, nec dapibus risus imperdiet. Integer ac ligula magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec vitae vestibulum ex. Nulla facilisi.</p>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="container">
+        <h2 class="section-title">Contact Us</h2>
+        <p class="section-content">You can contact us through the following methods:</p>
+        <ul class="section-content">
+            <li>Email: example@example.com</li>
+            <li>Phone: +1234567890</li>
+            <li>Address: 123 Street, City, Country</li>
         </ul>
-    </nav>
-</header>
+    </div>
+</section>
 
 </body>
 </html>
